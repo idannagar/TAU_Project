@@ -7,12 +7,12 @@ function main()
 
 
 % Problem 1.2 : Bi-static Radar Cross Section (RCS)
-[k, a, radius, phi, phiIncident, N] = getDefaultCfg_sectionValues('Problem 1.2');
+[k, radius, phi, phiIncident, N] = getDefaultCfg_sectionValues('Problem 1.2');
 [sigma] = getRCS(k, phi, phiIncident, radius, N, 'E Polarization');
 [sigma] = getRCS(k, phi, phiIncident, radius, N, 'H Polarization');
 
 % Problem 1.3 : Mono-static Radar Cross Section (RCS)
-[k, a, radius, phi, phiIncident, N] = getDefaultCfg_sectionValues('Problem 1.3');
+[k, radius, phi, phiIncident, N] = getDefaultCfg_sectionValues('Problem 1.3');
 [sigma] = getRCS(k, phi, phiIncident, radius, N, 'E Polarization');
 [sigma] = getRCS(k, phi, phiIncident, radius, N, 'H Polarization');
 
